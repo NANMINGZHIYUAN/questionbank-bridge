@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.deps/
+.test-tmp/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+工作区/
+work/
+examples/out/
+*.apkg
+*.docx
+*.pdf
+.env
+.env.*

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "questionbank-bridge"
+version = "0.1.0"
+description = "Local Chinese question-bank normalization and reviewed Markdown, Word, and Anki exports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "NANMINGZHIYUAN"}]
+dependencies = ["genanki==0.13.1", "python-docx>=1.1,<2", "Pillow>=10", "pypdf>=4"]
+
+[project.scripts]
+questionbank = "questionbank.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["questionbank*"]
